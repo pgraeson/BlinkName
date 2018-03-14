@@ -1,0 +1,116 @@
+
+int led2 = D7;
+
+
+void setup()
+{
+
+
+  
+   pinMode(led2, OUTPUT);
+
+ 
+   Particle.function("led",ledToggle);
+
+
+   digitalWrite(led2, LOW);
+
+}
+
+
+void loop()
+{
+   
+}
+
+
+
+int ledToggle(String command) {
+   
+  delay(1000); 
+  
+  digitalWrite(led2,LOW);
+  delay(250);
+  digitalWrite(led2,HIGH);
+  delay(500);
+  digitalWrite(led2,LOW);
+  //. of morsecode
+  
+  delay(1000); 
+  
+  digitalWrite(led2,HIGH);
+  delay(1000);
+  digitalWrite(led2,LOW);
+  delay(250);
+  digitalWrite(led2,HIGH);
+  delay(1000);
+  digitalWrite(led2,LOW);
+  // -- of morsecode
+  
+  delay(1000);
+  
+  digitalWrite(led2,LOW);
+  delay(250);
+  digitalWrite(led2,HIGH);
+  delay(500);
+  digitalWrite(led2,LOW);
+  //. of morsecode
+  
+  delay(2000);
+  
+//P of morsecode ^^^^
+
+  digitalWrite(led2,LOW);
+  delay(250);
+  digitalWrite(led2,HIGH);
+  delay(500);
+  digitalWrite(led2,LOW);
+  //. of morsecode
+  
+  delay(2000);
+  
+// E of morsecode
+
+  digitalWrite(led2,HIGH);
+  delay(1000);
+  digitalWrite(led2,LOW);
+  delay(250);
+  // - of morsecode
+  
+  delay(2000);
+  
+//T of morsecode
+
+  digitalWrite(led2,LOW);
+  delay(250);
+  digitalWrite(led2,HIGH);
+  delay(500);
+  digitalWrite(led2,LOW);
+  
+  delay(2000);
+
+// E of morsecode
+
+  digitalWrite(led2,LOW);
+  delay(250);
+  digitalWrite(led2,HIGH);
+  delay(500);
+  digitalWrite(led2,LOW);
+  
+  delay(1000);
+
+  digitalWrite(led2,HIGH);
+  delay(1000);
+  digitalWrite(led2,LOW);
+  delay(250);
+  
+  delay(1000);
+
+  digitalWrite(led2,LOW);
+  delay(250);
+  digitalWrite(led2,HIGH);
+  delay(500);
+  digitalWrite(led2,LOW);
+  
+// R of morsecode
+  
