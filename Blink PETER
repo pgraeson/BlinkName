@@ -4,28 +4,16 @@ int led2 = D7;
 
 void setup()
 {
-
-
   
    pinMode(led2, OUTPUT);
 
- 
-   Particle.function("led",ledToggle);
-
-
-   digitalWrite(led2, LOW);
 
 }
 
 
 void loop()
 {
-   
-}
 
-
-
-int ledToggle(String command) {
    
   delay(1000); 
   
@@ -114,3 +102,5 @@ int ledToggle(String command) {
   
 // R of morsecode
   
+    
+}
